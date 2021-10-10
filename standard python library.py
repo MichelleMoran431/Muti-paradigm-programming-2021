@@ -1,3 +1,6 @@
+#reference https://datatofish.com/use-pandas-to-calculate-stats-from-an-imported-csv-file/#
+
+
 import pandas as pd
 df = pd.read_csv (r'C:\Users\User\Desktop\repo\Muti-paradigm-programming-2021\example week 3.csv') 
 
