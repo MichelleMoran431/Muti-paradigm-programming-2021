@@ -21,8 +21,8 @@ struct Shop {
 struct Customer {
 	char* name;
 	double budget;
-	struct ProductStock shoppingList[10];
-	int index;
+	struct ProductStock shoppingList[10]; // an array which has space for 10 items 
+	int index; // to keep track of the value 
 };
 
 void printProduct(struct Product p)
@@ -37,10 +37,10 @@ void printCustomer(struct Customer c)
 	printf("-------------\n");
 	for(int i = 0; i < c.index; i++)
 	{
-		printProduct(c.shoppingList[i].product);
-		printf("%s ORDERS %d OF ABOVE PRODUCT\n", c.name, c.shoppingList[i].quantity);
-		double cost = c.shoppingList[i].quantity * c.shoppingList[i].product.price; 
-		printf("The cost to %s will be €%.2f\n", c.name, cost);
+		printProduct(c.shoppingList[i].product); // what the customer wants to buy 
+		printf("%s ORDERS %d OF ABOVE PRODUCT\n", c.name, c.shoppingList[i].quantity); // how much he wants to buy
+		double cost = c.shoppingList[i].quantity * c.shoppingList[i].product.price; //what is the cost ?
+		printf("The cost to %s will be €%.2f\n", c.name, cost); // cost the customer , a decimal number.qty x price
 	}
 }
 
