@@ -12,15 +12,16 @@ The assignment was to build a Shop program with the functionality as outlined be
 
 -Read in customer orders from a CSV file.
 
-  -That file should include all the products they wish to buy and in what quantity.
-   -  It should also include their name and their budget.
+      -That file should include all the products they wish to buy and in what quantity.
+      - It should also include their name and their budget.
 
 
  - The shop must be able to process the orders of the customer.
 
   - Update the cash in the shop based on money received.
       -It is important that the state of the shop be consistent.
-      -Include customer test csv files that cannot be completed by the shop
+      -Create customer test files (CSVs) which cannot be completed by the shop e.g customer wants 400 loaves of bread but shop only has 20
+      - If these files dont exist penalties will be applied
   - Know whether or not the shop can fill an order
      - Throw an appropriate error
 
@@ -32,6 +33,8 @@ The assignment was to build a Shop program with the functionality as outlined be
  - The functionality of the shop is replicated in an Object Oriented manner using either Python or Java.
 
  - The live mode, and the input files, should have the exact same behaviour in all implementations with an identical user experience.
+ - Have a complete a short report, around 3-5 pages, which compares the solutions achieved using the procedural approach and the object oriented approach
+
 
 
 
