@@ -76,7 +76,9 @@ Navigate to the python_oop folder and use the command python shop_oop.py to run 
 The interface for the user is the same for all 3 versions of the program. The user is present with a display menu that has 3 options available.
 
 Option 1 is to print the current shop state. This will show the cash and stock amounts in the shop whenever it is called. Initially the shop cash and stock items are read from a csv file called stock.csv. Once read in the file is no longer used.
+
 Option 2 gives the user the option to act as a customer that has an order in a file. The user is asked to enter the name of the file. The user should just enter the name of the file without the .csv extension. For example a file named customer.csv is just entered as customer and likewise with all the other customer files.
+
 Option 3 gives the user the option to enter a live mode, where the user can enter a product by name, specify a quantity, and pay for it. The user can buy many products in this way.
 
 
@@ -84,14 +86,15 @@ Option 3 gives the user the option to enter a live mode, where the user can ente
 
 There are several test files in the main folder.
 
-customer.csv, customer1.csv and customer2.csv are customer file containing orders that the shop can fill from the stock at the start of the program execution. The shop stock and cash is updated after every successful order has been processed whether this is a live or batch order. Therefore it is possible that one of these orders cannot be completly filled if the shop stock has already been sold.
+ - customer.csv, customer1.csv and customer2.csv are customer file containing orders that the shop can fill from the stock at the start of the program execution. The shop stock and cash is updated after every successful order has been processed whether this is a live or batch order. Therefore it is possible that one of these orders cannot be completly filled if the shop stock has already been sold.
+ 
 There are also some test files as required that the shop cannot completely fulfill.
 
-fred.csv contains an item that the shop does not stock at all.
-joe.csv contains several products that the shop does not stock at all.
-mike.csv contains two products, including one item that the shop does not stock.
-bad.csv and broke.csv are customer files where the customer does not have enough cash to pay for their shopping order.
-poor.csv is a customer file where the customer does not have enough cash to purchase all the items on their shopping order.
-coke.csv is a customer file where the customer is looking for a higher quantity of a product than the shop has in stock.
+ - fred.csv contains an item that the shop does not stock at all.
+ - joe.csv contains several products that the shop does not stock at all.
+ - mike.csv contains two products, including one item that the shop does not stock.
+ - bad.csv and broke.csv are customer files where the customer does not have enough cash to pay for their shopping order.
+ - poor.csv is a customer file where the customer does not have enough cash to purchase all the items on their shopping order.
+ - coke.csv is a customer file where the customer is looking for a higher quantity of a product than the shop has in stock.
 
 
